@@ -2,14 +2,15 @@
 	"name": "arpa",
 	"version": "0.1.0",
 	"description": "Arpa is Array Pagination",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"module": "dist/index.js",
+	"types": "src/index.ts",
 	"files": [
 		"dist",
 		"README.md"
 	],
 	"scripts": {
-		"build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files"
+		"build": "tsc"
 	},
 	"keywords": [
 		"Array",
@@ -17,10 +18,5 @@
 		"Array Pagination"
 	],
 	"author": "firmnardians",
-	"license": "MIT",
-	"devDependencies": {
-		"@babel/cli": "^7.15.7",
-		"@babel/core": "^7.15.8",
-		"@babel/preset-env": "^7.15.8"
-	}
+	"license": "MIT"
 }
