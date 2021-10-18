@@ -1,6 +1,6 @@
 {
 	"name": "arpa-js",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Arpa is Array Pagination",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -10,7 +10,8 @@
 		"README.md"
 	],
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"publish": "npm run build && npm publish"
 	},
 	"keywords": [
 		"Array",
