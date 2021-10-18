@@ -1,10 +1,11 @@
-export function paginationArray(arr: string[], pageSize: number, pageNumber: number) {
-	const start = pageSize * (pageNumber - 1);
-	const end = pageSize * pageNumber;
+export function arpa(data: string[], limit: number, page: number) {
+	const start = limit * (page - 1);
+	const end = limit * page;
+
 	return {
 		*[Symbol.iterator]() {
-			for (let i = start; i < arr.length && i < end; i++) {
-				yield arr[i];
+			for (let i = start; i < data.length && i < end; i++) {
+				yield data[i];
 			}
 		},
 	};

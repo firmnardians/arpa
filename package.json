@@ -1,6 +1,6 @@
 {
-	"name": "arpa",
-	"version": "0.1.0",
+	"name": "arpa-js",
+	"version": "0.1.1",
 	"description": "Arpa is Array Pagination",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
